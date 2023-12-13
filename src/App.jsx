@@ -1,20 +1,16 @@
-import { useState } from "react"
 import "./App.css"
 import Header from "./components/Header/main"
 import Footer from "./components/Footer/main"
+import BodyContent from "./components"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Header />
-      <div className="">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className="bg-zinc-50">
+        <Header />
+        <BodyContent />
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
