@@ -5,9 +5,11 @@ import tailwind from "/tailwind.svg"
 export default function Footer() {
   return (
     <>
-      <div className="mt-5 py-6 px-4 bg-blue-100 ">
+      <div className=" py-6 px-4 bg-blue-100 ">
         <div className=" w-80 m-auto ">
-          <h2 className="text-2xl mb-6 text-center">Tecnologias usadas</h2>
+          <h2 className="text-2xl mb-6 text-center color-black">
+            Tecnologias usadas
+          </h2>
           <div className="flex justify-between items-center font-bold underline flex gap-8">
             <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
               <img

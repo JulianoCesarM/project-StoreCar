@@ -4,7 +4,7 @@ import UsedCars from "./Cars/Usados"
 export default function BodyContent() {
   return (
     <>
-      <div className="w-4/5 mt-8 m-auto flex flex-col gap-10">
+      <div className="blur-bgs flex flex-col gap-10 bg-white">
         <NewCars />
         <UsedCars />
       </div>

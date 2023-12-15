@@ -1,3 +1,10 @@
+.blur-bgs {
+  backdrop-filter: blur(4px);
+}
+
+.color-black {
+  color: black;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -25,20 +25,19 @@ function App() {
 
   const currentBackground = backgrounds[backgroundIndex]
   return (
-    <div className="bg-black relative h-screen overflow-x-hidden">
-      <div className="absolute inset-0">
-        <div
-          className={`bg-cover h-screen transform transition-transform duration-500 ${
-            isTransitioning ? "translate-x-full" : "translate-x-0"
-          }`}
-          style={{
-            backgroundImage: `url(${currentBackground})`,
-            backgroundSize: "cover",
-            backgroundPosition: "top",
-          }}
-        ></div>
-      </div>
-      <div className="absolute inset-0">
+    <div className="bg-black h-screen overflow-x-hidden">
+      <div
+        className={`h-full transform transition-transform duration-500 ${
+          isTransitioning ? "translate-x-full" : "translate-x-0"
+        }`}
+        style={{
+          backgroundImage: `url(${currentBackground})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      ></div>
+      <div>
         <Header />
         <BodyContent />
         <Footer />
