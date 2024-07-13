@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import * as images from "//assets/imagens"
+import * as images from "/src/assets/imagens"
 
 export default function BannerLogo() {
   const [backgroundIndex, setBackgroundIndex] = useState(0)
