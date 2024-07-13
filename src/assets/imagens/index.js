@@ -1,3 +1,3 @@
-export { default as image1 } from "../../../public/background/image1.jpg"
-export { default as image2 } from "../../../public/background/image2.jpg"
-export { default as image3 } from "../../../public/background/image3.jpg"
+export { default as AntonMartin } from "../../../public/background/Aston-Martin-Logo-1984.png"
+export { default as Ferrari } from "../../../public/background/Ferrari-Logo-2010.png"
+export { default as Porshe } from "../../../public/background/Porsche-Logo.png"
