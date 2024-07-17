@@ -36,7 +36,8 @@ export default function BannerLogo() {
   return (
     <>
       <div
-        className={`${changeBackgroundBannerColor} h-80 overflow-x-hidden`}
+        className={`${changeBackgroundBannerColor} transform transition-transform duration-500 ${
+            isTransitioning ? "translate-x-full" : "translate-x-0" h-80 overflow-x-hidden`}
       >
         <div
           className={` h-full transform transition-transform duration-500 ${
