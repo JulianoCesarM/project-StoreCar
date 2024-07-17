@@ -40,13 +40,14 @@ export default function BannerLogo() {
           className={`${changeBackgroundBannerColor} h-80 transform transition-transform duration-500 ${
             isTransitioning ? "translate-x-full" : "translate-x-0"
           }`}
-          style={{
+          
+        >
+            <Image style={{
             backgroundImage: `url(${currentBackground})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-          }}
-        >
+          }}></Image>
       </div>
     </>
   )
