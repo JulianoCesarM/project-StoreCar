@@ -17,7 +17,7 @@ export default function BannerLogo() {
     }, 5000)
 
     return () => clearInterval(intervalId)
-  }, [])
+  }, [backgrounds.length])
 
   const currentBackground = backgrounds[backgroundIndex]
   if (currentBackground == "/ImageBannerLogo/Aston-Martin-Logo-1984.png") {
@@ -26,7 +26,11 @@ export default function BannerLogo() {
   }
   if (currentBackground == "/ImageBannerLogo/Ferrari-Logo-2010.png") {
     changeBackgroundBannerColor =
-      "bg-gradient-to-r from-yellow-500 via-gray-950 to-red-500"
+      "bg-gradient-to-r from-yellow-400 via-gray-950 to-red-600"
+  }
+  if (currentBackground == "/ImageBannerLogo/Porsche-Logo.png") {
+    changeBackgroundBannerColor =
+      "bg-gradient-to-r from-red-600 via-gray-950 to-amber-600"
   }
   console.log(currentBackground)
   return (
@@ -39,6 +43,7 @@ export default function BannerLogo() {
             isTransitioning ? "translate-x-full" : "translate-x-0"
           }`}
           style={{
+            backgroundColor: "white",
             backgroundImage: `url(${currentBackground})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
