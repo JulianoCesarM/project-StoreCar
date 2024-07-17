@@ -37,7 +37,7 @@ export default function BannerLogo() {
     <>
       
         <div
-          className={`${changeBackgroundBannerColor} h-80 h-full transform transition-transform duration-500 ${
+          className={`${changeBackgroundBannerColor} h-80 transform transition-transform duration-500 ${
             isTransitioning ? "translate-x-full" : "translate-x-0"
           }`}
           style={{
