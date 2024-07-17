@@ -35,12 +35,9 @@ export default function BannerLogo() {
   console.log(currentBackground)
   return (
     <>
-      <div
-        className={`${changeBackgroundBannerColor} transform transition-transform duration-500 ${
-            isTransitioning ? "translate-x-full" : "translate-x-0" h-80 overflow-x-hidden`}
-      >
+      
         <div
-          className={` h-full transform transition-transform duration-500 ${
+          className={`${changeBackgroundBannerColor} h-80 h-full transform transition-transform duration-500 ${
             isTransitioning ? "translate-x-full" : "translate-x-0"
           }`}
           style={{
@@ -49,7 +46,7 @@ export default function BannerLogo() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
-        ></div>
+        >
       </div>
     </>
   )
